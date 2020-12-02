@@ -28,9 +28,22 @@ body {
   text-align: justify;
   margin-left: 5px;
 }
-.headline {
+.img-container {
   text-align: center;
 }
-.img {
+.img-container img {
+  vertical-align: middle;
+  display: inline-block;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
   text-align: center;
+}
+.article-body {
+  line-height: 2;
+}
+.section-recommendation {
+  line-height: 2;
 }
