@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+table {
+    border: 4px solid #7e7e7e;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+p {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    color: red;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+  
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    
+}
+
+.hover {
+  
+    width: 16%;
+    font-size: 16px;
+    text-align: center;
+    border:1px solid grey;
+}
+
+td {
+    padding: 0;
+    display: table-cell;
+    border :1px solid grey;
+    vertical-align: top;
+   
+}
+.rs3{
+    width: 33.3%;
+    position: relative;
+    b
+    
+    float: left;
+}
+.rs4,.rs7 {
+    width: 25%;
+    position: relative;
+   
+    float: left;
+    padding:0;
+}
+.rs5,.rs6 {
+    width: 33.3%;
+    position: relative;
+   
+    float: left;
+    padding:0;
+}
+
+
+    
+
+}
+.rs-1-0, .rs-0-0, .rs-8-0 {
+    width: 100%;
+    position: relative;
+    padding:0;
+    float: left;
+ 
+    border-spacing: 0;
+}
+
+
+tr {
+    display: table-row;
+}
+.rs-2-0, .rs-2-1,.rs-8-0,.rs-1-0 {
+    border-right: 1px solid grey;
+    text-align: center;
+    font-size: 22px;
+    font-weight:700;
+}
+.rs3-1,.rs3-2,.rs3-3,.rs3-4,.rs3-5,.rs3-6 {
+    width:33.3%;
+    position:relative;
+    float:left;
+    border:1px solid gray;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+
+    
+}
+.rs4-1,.rs4-2,.rs4-3,.rs4-4,.rs7-1,.rs7-2,.rs7-3,.rs7-4 {
+    width:25%;
+    position:relative;
+    float:left;
+    border:1px solid gray;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+
+}
+.rs5-1,.rs5-2,.rs5-3,.rs5-4,.rs5-5,.rs5-6,.rs6-1,.rs6-2,.rs6-3 {
+    width:33.3%;
+    position:relative;
+    float:left;
+    border: 1px solid gray;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+.rs-0-0 {
+    border-right: 1px solid grey;
+    text-align: center;
+    font-size: 30px;
+    font-weight:700;
+    color: red;
+}
+
+
+
+
+
+
