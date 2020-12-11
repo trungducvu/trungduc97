@@ -51,7 +51,7 @@ h1 {
     flex-direction: column;
 }
 
-}
+
 .blog-post-image {
     display:flex;
     width: 40%;
@@ -66,5 +66,4 @@ img {
 }
 .blog-post {
     text-align: left;
-
 }
