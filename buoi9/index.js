@@ -5,7 +5,7 @@
 let a = +prompt("Nhập số thứ nhất");
 let b = +prompt("Nhập số thứ hai");
 let c = +prompt("Nhập số thứ ba");
-a = 
+ 
 if ( a > b && a > c ) {
     console.log("Max =", a);
 }
