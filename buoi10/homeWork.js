@@ -125,3 +125,17 @@ function digitNumber(n) {
 digitNumber(12345);
 
 //In day so fibonacci//
+function fibonacci() {
+    var a;
+    var b= 0;
+    var c=1;
+    document.writeln(b);
+    document.writeln(c);
+    var d = 0;
+    for (var i =2; i<a,i++) {
+        document.writeln(d = c+b);
+        b=c;
+        c=d;
+    }
+}
+fibonacci();
