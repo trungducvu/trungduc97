@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 500px;
+  height: 500px;
+  margin: 20px auto 20px auto;
+  background-color: rgb(182, 175, 175);
+  padding: 80px;
+}
+#myDIV {
+  width: 300px;
+  margin: auto;
+  border-radius: 15px;
+  background-color: white;
+  padding: 5px;
+}
+
+#myDIV input {
+  width: 100%;
+  border: none;
+  height: 30px;
+}
+
+li {
+  list-style-type: none;
+}
+.list {
+  width: 300px;
+  margin: auto;
+  border-radius: 15px;
+  background-color: white;
+}
