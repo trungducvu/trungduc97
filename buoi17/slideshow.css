@@ -91,3 +91,6 @@ a {
     float: right;
     padding-right: 8px;
   }
+.dropdown_container {
+      display: none;
+  }
