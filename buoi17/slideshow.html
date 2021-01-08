@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+    <link rel="stylesheet" href="slideshow.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="sideBar">
+        <ul class="main-Ul">
+            <li class="li"><a href="#">About</a></li>
+            <li class="li"><a href="#">Ways to Watch</a></li>
+            <li class="li"><a href="#">Corporate Information</a></li>
+            <li class="li"><a href="#">Netflix Original</a></li>
+            <li class="li"><a href="#">Contact Us</a></li>
+            <li class="btn_dropdown li"><a href ="#">Dropdown</a>
+                <i class="fa fa-caret-down"></i>
+                <div class="dropdown_container">
+                    <ul class="ul-dropdown">
+                        <li class="ul-dropdown-item"><a href="#">Dropdown1</a></li>
+                        <li class="ul-dropdown-item"><a href="#">Dropdown2</a></li>
+                        <li class="ul-dropdown-item"><a href="#">Dropdown3</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="mySlider">
+        <div class="singleSlide fade">
+            <img src="img1.jpg">
+            <div class="text">Insterstellar</div>
+        </div>
+        <div class="singleSlide fade">
+            <img src="img2.jpg" >
+            <div class="text">Wonder Woman 1984</div>
+
+        </div>
+        <div class="singleSlide fade">
+            <img src="img3.jpeg" >
+            <div class="text">Tenet</div>
+
+        </div>
+    <div class="sliderNav">
+        <a class = "sliderPrev" onclick="plusSlide(-1)">&#10094;</a>
+        <a class="sliderNext" onclick="plusSlide(1)">&#10095;</a>     
+    </div>
+    </div>
+    <script src="slideshow.js">
+        
+    </script>
+
+
+</body>
+</html>

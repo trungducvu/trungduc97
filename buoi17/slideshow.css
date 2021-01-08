@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+.mySlider {
+    max-width: 1000px;
+    position: relative;
+    margin:auto;
+}
+.text {
+    position: absolute;
+    color: #f2f2f2;
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    top:75%;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+img {
+    width: 100%;
+    height: 500px;
+    vertical-align: middle;
+}
+.singeSlide {
+    display: none;
+}
+.sliderPrev, .sliderNext {
+    cursor: pointer;
+    position:absolute;
+    top:50%;
+    width: auto;
+    padding: 30px;
+    margin-top: -23px;
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none; }
+
+.sliderNext {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+.sliderNext:hover,.sliderPrev:hover {
+    background-color: rgba(230, 215, 215, 0.781);
+
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+.sideBar {
+    height: 100%;
+    width: 180px;
+    z-index: 1;
+    background-color:rgba(112, 194, 221, 0.884);
+    border-radius: 10px;
+}
+ul {
+    list-style-type: none;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    cursor:pointer;
+    text-align: left;
+}
+.li a:hover,.ul-dropdown-item a:hover {
+    color: rgba(152, 185, 91, 0.781)
+}
+.active {
+    background-color: green;
+    color: white;
+  }
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
