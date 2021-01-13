@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai4</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 100%;
+            margin: 15px;
+        }
+       .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            height: 50px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-list {
+            height: 30px;
+            width: 90px;
+            background-color: aquamarine;
+            
+        }
+        .main {
+            width: 100%;
+            padding: 15px 7.5px 0 7.5px;
+        }
+        .col-6{
+            width: 50%;
+        }
+        .item {
+            background-color: blueviolet;
+            height: 150px;
+        }
+        .wrap {
+            padding: 15px 7.5px 0 7.5px;
+        }
+
+        @media (max-width: 576px) {
+            .col-sm-12 {
+                width: 100%;
+            }
+            .header-list {
+                width: 60px;
+            }
+            .wrap{
+                padding-top:15px;
+            }
+            main {
+                padding: 0;
+            }
+            header {
+                width: 100%;
+               
+            }
+    }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-list"></div>
+            <div class="header-list"></div>
+            <div class="header-list"></div>
+        </header>
+    </div>  
+        <main>
+            <div class="row">
+                <div class="col-6 col-sm-12 wrap">
+                  <div class="item"></div>
+                </div>
+                <div class="col-6 col-sm-12 wrap">
+                  <div class="item"></div>
+                </div>
+              </div>
+        </main>
+    </div>
+    <a href="bai2.html">Bai2</a>
+    <a href="bai3.html">Bai3</a>
+    <a href="bai4.html">Bai4</a>
+    
+</body>
+</html>
