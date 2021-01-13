@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai3</title>
+    <style>
+          *{
+              padding:0;
+              margin:0;
+              box-sizing: border-box;
+              }
+            
+        .container {
+           max-width: 100%;
+        }
+        header {
+            width: 100%;
+            height: 30px;
+            background-color: blueviolet;
+        }
+        .flex{
+            display: flex;
+        }
+        .wrap {
+            flex-wrap:wrap ;
+        }
+        #content {
+            width: 100%;
+            margin-bottom: 30px;
+            padding: 0 15px;
+        }
+        .right-nav{
+            background-color: aqua;
+            width: 100%;
+            height: 1000px;
+            padding: 0 15px;
+        }
+        .item {
+            background-color: brown;
+            height: 150px;
+        }
+        .col {
+            width: calc(100%/2);
+            padding: 7.5px;
+        }
+        .justify-between {
+            justify-content: space-between;
+        }
+        @media (min-width: 768px) {
+            main {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            #content  {
+                width: calc(100% - 100%/3);
+                padding: 0 15px;
+            }
+            .row {
+                margin-left: -7.5px;
+            }
+            .right-nav {
+                width: calc(100% / 3);
+                padding: 0 15px 0 15px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header></header>
+    <main class="flex wrap">
+        <section id ="content">
+            <div class="row flex justify-between wrap">
+                <div class="col">
+                    <div class="item"></div>
+                </div>
+                <div class="col">
+                    <div class="item"></div>
+                </div>
+            </div>
+            <div class="row flex justify-between wrap">
+                <div class="col">
+                    <div class="item"></div>
+                </div>
+                <div class="col">
+                    <div class="item"></div>
+                </div>
+            </div>
+        </section>
+        <aside class="right-nav">
+        </aside>
+    </main>
+
+    </div>
+    <a href="bai2.html">Bai2</a>
+    
+</body>
+</html>
