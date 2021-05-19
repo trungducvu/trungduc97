@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Go Travel</title>
+    <link rel = "icon" type="image/x-icon" href="asset/img/logo.png">
+    <!--Googlefont-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+      <!--Vendor CSS file-->
+      <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
+    />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--Template Main CSS File-->
+    <link rel="stylesheet" href="asset/icon_font/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="asset/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <!--Slick-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+   
+
+  </head>
+  <body>
+    <div class="page-wrapper d-flex flex-column">
+      <header class="page-header d-block">
+        <div class="header-container header-style-2 gotravel">
+          <div class="header-main">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-2 header-left "style="background-color:#292931;">
+                  <div class="middle-content">
+                    <div class="logo-container">
+                      <h1 class="logo-content">
+                        <strong> </strong>
+                        <a class="logo" href="#" title="">
+                          <img
+                            src="./asset/img/logo.png"
+                            alt                           
+                          />
+                        </a>
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-sm-10 header-right ps-0">
+                  <div class="header-middle" style="padding:20px 0 10px;">
+                    <div class="middle-content">
+                        <div class="right-container ">
+                            <div class="search-content">
+                              <div class="block block-search search-pro">
+                                <div class="block-content">
+                                  <form class="form minisearch active">
+                                    <div class="field search">
+                                      <div class="control">
+                                        <select class="cat searchbox-cat"></select>
+                                        <input id="searchbox" type="text" name= "q" placeholder="Enter keywords to search..." class="input-text input-searchbox"
+                                        maxlength="128" role="combobox" aria-expand="true" aria-autocomplete="both" aria-activedescendant="qs-option-1" autocomplete="off">
+                                        <div id="searchbox_autocomplete"></div>
+                                      </div>   
+                                    </div>
+                                    <div class="actions">
+                                      <button type="submit" title="search" class="btn-searchbox">
+                                        <span>search</span>
+                                      </button>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+
+                            </div>
+                            <div class="right-content">
+                              <div class ="minicart-header" style="float:right">
+                              <div class="minicart-wrapper">
+                                <a class="action showcart" href="#">
+                                  <span class="text">My Cart</span>
+                                  <span class="counter qty empty">
+                                    <span class="counter-number">0</span>
+                                    <span class="counter-label"></span>
+                                  </span>
+                                  <span class="price-minicart">
+                                    <div class="subtotal">
+                                      <div class="amount price-container">
+                                        <span class="price-wrapper">
+                                          <span class="price">$0.00</span>
+                                        </span>
+                                      </div>      
+                                    </div>
+                                  </span>
+                                  </a>
+                              </div>
+                              </div>
+                              <div style="float:right;padding:0 20px;">
+                                <a data-toggle="" title="Go customer Login" href ="#">
+                                  <img src="asset/img/icon_signin.png" alt="sign in" style="height: 44px;">
+                                </a>
+                              </div>
+                            </div> 
+                        </div>
+                   </div>
+                  </div>
+                  <div class="header-bottom ontop-element">
+                    <div class="container">
+                        <div class="desktop-menu">
+                            <div class="vertical-block">
+                              <div class="vertical-menu">
+                                <div class="vertical-menu-block">
+                                  <div class="block-title-menu">
+                                    Shop Now
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="horizontal-block">
+                              <div class="horizontal-menu">
+                                <div class="horizontal-megamenu-block">
+                                  <nav class="sm_megamenu_wrapper_horizontal_menu sambar">
+                                    <div class="sambar-inner">
+                                      <div class="mega-content">
+                                        <ul class="horizontal-type sm_megamenu_menu">
+                                          <li class="home-item other-toggle">
+                                            <a class="sm-megamenu_head" href="#">
+                                              <span class="sm_menu_title">Home</span>
+                                            </a>
+                                          </li>
+                                          <li class="other-toggle">
+                                            <a class="sm-megamenu_head" href="#">
+                                              <span class="sm_menu_title">Innovations</span>
+                                            </a>
+                                          </li>
+                                          <li class="other-toggle">
+                                            <a class="sm-megamenu_head" href="#">
+                                              <span class="sm_menu_title">News</span>
+                                            </a>
+                                          </li>
+                                          <li class="other-toggle">
+                                            <a class="sm-megamenu_head" href="#">
+                                              <span class="sm_menu_title">Contact</span>
+                                            </a>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                  </nav>
+                                </div>
+                             
+                              <div class="promotion-block">
+                                <div style="display: inline-block;">
+                                  <a href="#">Gift Cards</a>
+                                </div>
+                                <div style="display: inline-block;">
+                                  <a href="#">Great Offers</a>
+                                </div>
+                              </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="nav-overlay">
+        <span class="hidden">Overlay</span>
+      </div>
+      <main id="main-content" class="page-main">
+        <div class="columns"> 
+          <div class="column main">
+            <div class="container ">
+              <div class="container">
+                <div class="container">
+                  <div class ="widget block block-static-block ">
+                    <div class="slideshow-container-new clearfix">
+                      <div class="slideshow-home">
+                        <div class="custom-slider">
+                          <div class="owl-carousel-custom owl-carousel owl-loaded">
+                            <div class="owl-stage-outer">
+                              <div class="owl-stage item-wrapper">
+                               <div class="owl-item">
+                                 <div class="banner-item banner-5">
+                                   <span class="banner-video">
+                                     <a href="#">
+                                       <video playsinline webkit-playsinline autoplay muted loop controls controlist="nodownload" width height style>
+                                         <source src="asset/dg_memory_dreamer_shortweb_v1_2.mp4" type="video/mp4">
+                                       </video>
+                                     </a>
+                                   </span>
+                                 </div>
+                               </div>
+                               <div class="owl-item">
+                                 <div class="banner-item banner-14">
+                                   <a href="#">
+                                     <span class="banner-image">
+                                       <img src="asset/img/banner_gift_banner_gbp.jpg" alt title>
+                                     </span>
+                                   </a>                         
+                                 </div>
+                               </div>
+                               <div class="owl-item">
+                                 <div class="banner-item banner-1">
+                                   <a href="#">
+                                     <span class="banner-image">
+                                       <img src="asset/img/banner_cable_lock_1.jpg" alt="Road Trip Ready" title="Road Trip Ready">
+                                     </span>
+                                   </a>
+                                 </div>
+                               </div>
+                               <div class="owl-item">
+                                 <div class="banner-item banner-2">
+                                   <a href="#">
+                                     <span class="banner-image">
+                                       <img src="asset/img/banner_memory_dreamer_1.jpg" alt="Memory Dream Pillow" title="Memory Dreamer Pillow">
+                                     </span>
+                                   </a>
+                                 </div>
+                               </div>
+                               <div class="owl-item">
+                                 <div class="banner-item banner-3">
+                                   <a href="#">
+                                     <span class="banner-image">
+                                       <img src="asset/img/banner_cables.jpg" alt title>
+                                     </span>
+                                   </a>
+                                 </div>
+                               </div>
+                               <div class="owl-item">
+                                 <div class="banner-item banner-4">
+                                   <a href="#">
+                                     <span class="banner-image">
+                                       <img src="asset/img/banner_work_rest_play.jpg"alt title>
+                                     </span>
+                                   </a>
+                                 </div>  
+                              </div> 
+                            </div>
+                          </div>      
+                        </div>
+                      </div>   
+                  </div>
+                </div>
+              </div>       
+            </div> 
+            </div>
+          </div>
+          <div class="container">
+            <div class="container">
+              <div class="text-branner" style="margin-bottom:30px;">
+                <div class="hot-item">
+                  Welcome to the Go Travel Store!
+                </div>
+                <div class="text-offer">
+                  It's about the
+                  <strong>journey</strong> 
+                  ...
+                  <a class="explorer" href="#">Great Offers</a>
+                </div>          
+              </div>
+            </div>
+          </div>
+            
+
+         
+        
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="group-product-slider-1" style="margin-bottom:30px;">
+                  <div id="filterproduct_0" class="block block-filterproducts block-group-product">
+                    <div class="block-title">
+                      <strong>New Arrivals</strong>
+                    </div>
+                    <div class="block-content">
+                      <div class="grid products-grid">
+                        <div class="slider-thumbs">
+
+                        </div>
+                        <div class="products list items product-items filterproducts">
+                          <div>
+                            <div class="item product product-item" style="width:100%;display: inline-block;">
+                            <div class="product-item-info" data-container="products-grid">
+                              <div class="image-product">
+                                <a href="#" class="product-item-photo">
+                                  <span class="product-image-container product-image-container-1"style="width:400px">
+                                    <span class="product-image-wrapper"style="padding-bottom:100%;">
+                                      <img class="product-image-photo" src="asset/img/488_prod_a_col1_gun_metal_1.png">
+                                    </span>
+                                  </span>
+                                </a>
+                              </div>
+                              <div class="product-item-details">
+                                <strong class="product-item-name">
+                                  <a class="product-item-link" href="#">Ultimate 2.0</a>
+                                  <div class="product-item-skuref">Ref:488</div>
+                                </strong>
+                                <div class="price-box price-final_price">
+                                  <span class="price-container price-final_price">
+                                    <span id="product-price-1706" class="price-wrapper">
+                                      <span class="price">$29.99</span>
+                                    </span>
+                                  </span>
+                                </div>
+                                <div class="product-item-actions">
+                                  <div class="action-primary">
+                                    <form>
+                                      <button type="submit" title="Add to Cart" class="action tocart primary">
+                                        <span>Add to Cart</span>
+                                      </button>
+                                    </form>
+                                  </div>
+                                  <div class="action-secondary">
+                                    <a href="#" class="action towishlist" title="add to wishlist">
+                                      <span>Add to Wish List</span>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>                            
+        </div>       
+      </main>
+      
+      <div class="page-bottom">
+        <div class="content">
+          <div class="back-to-top">
+            <i class="bi bi-arrow-up-short"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+    <!--Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <!--Slick-->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+    <script type="text/JavaScript" src="asset/js/main.js" ></script>
+    
+
+   
+  </body>
+</html>
