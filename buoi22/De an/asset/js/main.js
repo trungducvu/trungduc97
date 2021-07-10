@@ -35,16 +35,20 @@
             responsive: {
                 0: {
                     items: 1,
+                    nav: true,
 
                 },
-                600: {
-                    items: 3,
-                    nav: false
+                481: {
+                    items: 2,
+                    nav: true,
+
                 },
-                1000: {
+                768: {
+                    items: 3,
+                    nav: true,
+                },
+                992: {
                     items: 4,
-                    loop: false,
-                    nav: true
 
                 }
             }
@@ -64,16 +68,20 @@
             responsive: {
                 0: {
                     items: 1,
+                    nav: true,
 
                 },
-                600: {
-                    items: 3,
-                    nav: false
+                481: {
+                    items: 2,
+                    nav: true,
+
                 },
-                1000: {
+                768: {
+                    items: 3,
+                    nav: true,
+                },
+                992: {
                     items: 4,
-                    loop: false,
-                    nav: true
 
                 }
             }
@@ -97,14 +105,24 @@
             navText: ["prev", "next"],
             responsive: {
                 0: {
-                    items: 1,
+                    items: 3,
 
                 },
                 600: {
                     items: 3,
                     nav: false
                 },
-                1000: {
+                767: {
+                    items: 4,
+                    nav: false
+                },
+                992: {
+                    items: 4,
+                    loop: true,
+                    nav: true
+
+                },
+                1200: {
                     items: 6,
                     loop: true,
                     nav: true
@@ -144,6 +162,21 @@
         });
 
     })
+    /*Mobile nav toggle*/
+    $(".mobile-menu").click(function (e) {
+        e.stopPropagation();
+        $('body').toggleClass('show-sidebar-nav')
+
+    })
+    $('body').click(function (e) {
+        e.stopPropagation();
+        if ($('body').hasClass('show-sidebar-nav')) {
+            $('body').toggleClass('show-sidebar-nav')
+        }
+
+
+    })
+
 
 
 
