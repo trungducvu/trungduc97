@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .page-layout-2columns-right .column.main {
+    float: left;
+  }
+}
+.inner-content {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.page-main {
+  padding: 30px 0 60px;
+}
+
+.gallery-product-photo_horizontal {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-top: 10px;
+}
+.product_sku {
+  padding-right: 50px;
+}
+.product-info-main .product.attribute.sku {
+  display: inline-block;
+  vertical-align: top;
+  color: #7d7d7d;
+}
+.product-info-main .product.attribute.sku .type {
+  font-weight: 400;
+  margin-right: 5px;
+  color: #222;
+}
+.product-info-main .product.attribute.sku .type::after {
+  content: "#:";
+}
+.product-info-main .product.attribute.sku .value {
+  display: inline-block;
+  color: #00d660;
+  word-break: break-all;
+  vertical-align: top;
+}
+.product_sku,
+.product_stock_status {
+  float: left;
+}
+.product_stock_status .stock.available {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #00d660;
+  display: inline-block;
+  vertical-align: top;
+}
+.product_stock_status .stock.available::before {
+  content: "\f00c";
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  margin-right: 2px;
+  vertical-align: middle;
+  top: -1px;
+  font-size: 14px;
+  font-weight: 900;
+  text-align: center;
+}
+.product_name .element-inner {
+  margin-bottom: 15px;
+  margin-left: 0 !important;
+}
+h1.product-name {
+  font-weight: 400;
+  line-height: 1.3;
+  margin-top: 0;
+  font-size: 171.428%;
+  color: #222;
+  margin: 0;
+}
+.product_features p {
+  font-size: 14px;
+  margin-bottom: 0;
+  font-weight: 500;
+  text-indent: -3px;
+  margin-left: 6px;
+  line-height: 23px;
+  color: #666666;
+}
+.product_features .element-inner {
+  margin: 0 !important;
+}
+.tabs {
+  color: #333;
+}
+.slick-slider .slick-arrow.slick-prev {
+  left: 0;
+  transform: rotate(180deg) translate(0, 50%);
+}
+.slick-slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  padding: 0;
+  width: 15px;
+  height: 22px;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  border: none;
+  background: url(../img/download.svg) center no-repeat !important;
+  transition: background 0.3s ease;
+}
+.amrelated-grid-wrapper .slick-arrow {
+  z-index: 999;
+}
+.slick-slider .slick-arrow::before {
+  content: "";
+}
+.page-layout-2columns-right .sidebar {
+  float: right !important;
+}
